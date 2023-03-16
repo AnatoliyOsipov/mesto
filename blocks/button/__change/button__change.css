@@ -1,0 +1,8 @@
+.button__change {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #FFFFFF;
+    background-image: url(../../../images/pen.svg);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
