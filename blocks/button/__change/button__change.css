@@ -1,6 +1,9 @@
 .button__change {
+  border: 1px solid #ffffff;
+  background-color: transparent;
   width: 24px;
   height: 24px;
   margin-left: 18px;
+  padding: 0;
 }
 

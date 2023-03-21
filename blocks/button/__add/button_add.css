@@ -1,8 +1,11 @@
 .button__add {
+  border: 1px solid #ffffff;
+  background-color: transparent;
   width: 150px;
   height: 50px;
   margin-top: 75px;
   margin-left: auto;
   margin-right: 200px;
+  padding: 0;
 }
 
