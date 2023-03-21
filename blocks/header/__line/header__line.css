@@ -1,6 +1,13 @@
 .header__line {
   border-bottom: 1px solid #545454;
-  margin: 41px 200px 0;
+  margin: 41px 200px 0 200px;
   max-width: 888px;
   opacity: 70%;
+}
+
+@media (max-width: 479px) {
+  .header__line {
+    max-width: 320px;
+    margin: 41px 0 0 0;
+  }
 }

@@ -5,3 +5,11 @@
   color: #545454;
   margin: 67px auto 60px 200px;
 }
+
+@media (max-width: 479px) {
+  .footer__copyrighting {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 48px auto 36px 19px;
+  }
+}
