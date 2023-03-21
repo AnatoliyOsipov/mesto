@@ -6,3 +6,13 @@
   margin-left: 200px;
   box-sizing: border-box;
 }
+
+@media (max-width: 479px) {
+  .header__logo {
+    width: 103.74px;
+    height: 24.4px;
+    margin-top: 28px;
+    margin-left: 27px;
+    background-image: url(../../../images/logo_320.svg);
+  }
+}
