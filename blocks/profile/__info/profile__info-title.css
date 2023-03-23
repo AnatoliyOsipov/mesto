@@ -4,3 +4,10 @@
   line-height: 48px;
   color: #ffffff;
 }
+
+@media (max-width: 1023px) {
+  .profile__info-title {
+    font-size: 27px;
+    line-height: 33px;
+  }
+}

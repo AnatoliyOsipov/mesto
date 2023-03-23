@@ -9,3 +9,18 @@
   padding: 0;
 }
 
+@media (max-width: 1023px) {
+  .button__add {
+    margin-right: 150px;
+    width: 120px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .button__add {
+    margin: 36px auto 0;
+    width: 282px;
+    height: 50px;
+  }
+}

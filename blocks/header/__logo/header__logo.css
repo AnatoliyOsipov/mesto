@@ -7,6 +7,12 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 1023px) {
+  .header__logo {
+    margin-left: 100px;
+  }
+}
+
 @media (max-width: 479px) {
   .header__logo {
     width: 103.74px;

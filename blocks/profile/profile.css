@@ -1,3 +1,12 @@
 .profile {
   display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
 }

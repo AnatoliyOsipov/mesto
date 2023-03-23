@@ -6,6 +6,18 @@
   margin: 67px auto 60px 200px;
 }
 
+@media (max-width: 1023px) {
+  .footer__copyrighting {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 677px) {
+  .footer__copyrighting {
+    margin-left: 100px;
+  }
+}
+
 @media (max-width: 479px) {
   .footer__copyrighting {
     font-size: 14px;

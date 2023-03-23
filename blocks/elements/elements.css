@@ -1,7 +1,25 @@
 .elements {
   display: grid;
+  max-width: 880px;
+  margin: 0 auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  padding: 47.25px 200px 0;
+  padding-top: 47.25px;
   gap: 20px 17px;
+  justify-items: center;
+  overflow: hidden;
+}
+
+@media (max-width: 1023px) {
+  .elements {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .elements {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
 }

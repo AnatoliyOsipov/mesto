@@ -7,3 +7,9 @@
   padding: 0;
 }
 
+@media (max-width: 767px) {
+  .button__change {
+    width: 18px;
+    height: 18px;
+  }
+}

@@ -5,3 +5,16 @@
   margin-top: 16px;
   color: #ffffff;
 }
+
+@media (max-width: 1023px) {
+  .profile__info-subtitle {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .profile__info-subtitle {
+    margin-top: 14px;
+  }
+}

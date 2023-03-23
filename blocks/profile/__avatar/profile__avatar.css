@@ -5,3 +5,15 @@
   margin-left: 200px;
   border-radius: 50%;
 }
+
+@media (max-width: 1023px) {
+  .profile__avatar {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile__avatar {
+    margin: 38.25px auto 0;
+  }
+}
