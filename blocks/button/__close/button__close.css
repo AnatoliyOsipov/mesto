@@ -8,3 +8,17 @@
   margin-top: -40px;
   margin-right: -40px;
 }
+
+@media (max-width: 767px) {
+  .button__close {
+    margin-top: -48px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .button__close {
+    width: 20px;
+    height: 20px;
+  }
+}
