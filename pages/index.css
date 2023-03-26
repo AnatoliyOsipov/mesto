@@ -6,6 +6,7 @@
 @import url(../blocks/test/test.css);
 @import url(../blocks/button/button.css);
 @import url(../blocks/button/__add/button_add.css);
+@import url(../blocks/button/__close/button__close.css);
 @import url(../blocks/button/__change/button__change.css);
 @import url(../blocks/button/__save/button__save.css);
 @import url(../blocks/header/header.css);
