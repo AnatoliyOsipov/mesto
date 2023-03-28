@@ -7,6 +7,13 @@
   margin-left: auto;
   margin-right: 200px;
   padding: 0;
+  background-image: url('./../../../images/plus.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button__add:hover {
+  opacity: 0.6;
 }
 
 @media (max-width: 1023px) {

@@ -2,10 +2,6 @@
   margin-left: auto;
 }
 
-.button:hover {
-  opacity: 0.6;
-}
-
 @media (max-width: 767px) {
   .button {
     margin: 0;
