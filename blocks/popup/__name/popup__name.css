@@ -4,6 +4,7 @@
   line-height: 17px;
   margin-top: 54px;
   margin-left: 36px;
+  border: 0;
 }
 
 @media (max-width: 479px) {
