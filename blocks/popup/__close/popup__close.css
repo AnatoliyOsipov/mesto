@@ -1,4 +1,4 @@
-.button__close {
+.popup__close {
   position: absolute;
   align-self: flex-end;
   top: -40px;
@@ -13,22 +13,21 @@
   background-position: center;
 }
 
-.button__close:hover {
+.popup__close:hover {
   opacity: 0.6;
 }
 
 @media (max-width: 767px) {
-  .button__close {
+  .popup__close {
     top: -40px;
     right: 0;
   }
 }
 
 @media (max-width: 479px) {
-  .button__close {
+  .popup__close {
     width: 20px;
     height: 20px;
     top: -36px;
   }
 }
-

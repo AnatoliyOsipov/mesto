@@ -1,6 +1,6 @@
 //Константы закрытия, открытия, сохранения попапа
 const popupElement = document.querySelector(".popup");
-const popupCloseButtonElement = popupElement.querySelector(".button__close");
+const popupCloseButtonElement = popupElement.querySelector(".popup__close");
 const popupOpenButtonElement = document.querySelector(".button__change");
 
 //Присваивание имени и описания на странице
