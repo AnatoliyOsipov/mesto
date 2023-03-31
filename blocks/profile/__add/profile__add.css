@@ -1,32 +1,27 @@
-.button__add {
-  border: 1px solid #ffffff;
+.profile__add {
+  border: 2px solid #ffffff;
+  border-radius: 2px;
   background-color: transparent;
   width: 150px;
   height: 50px;
   margin-top: 75px;
   margin-left: auto;
-  margin-right: 200px;
   padding: 0;
-  background-image: url('./../../../images/plus.svg');
+  background-image: url("./../../../images/plus.svg");
+  background-size: 22px 22px;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
-.button__add:hover {
+.profile__add:hover {
   opacity: 0.6;
 }
 
-@media (max-width: 1023px) {
-  .button__add {
-    margin-right: 150px;
-    width: 120px;
-    height: 40px;
-  }
-}
-
 @media (max-width: 767px) {
-  .button__add {
+  .profile__add {
     margin: 36px auto 0;
+    background-size: 16px 16px;
     width: 282px;
     height: 50px;
   }

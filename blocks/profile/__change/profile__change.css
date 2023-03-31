@@ -1,22 +1,25 @@
-.button__change {
+.profile__change {
   border: 1px solid #ffffff;
   background-color: transparent;
   width: 24px;
   height: 24px;
   margin-left: 18px;
   padding: 0;
-  background-image: url('./../../../images/pen.svg');
+  background-image: url("./../../../images/pen.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 10px 10px;
+  cursor: pointer;
 }
 
-.button__change:hover {
+.profile__change:hover {
   opacity: 0.6;
 }
 
 @media (max-width: 767px) {
-  .button__change {
+  .profile__change {
     width: 18px;
     height: 18px;
+    background-size: 75px 7.5px;
   }
 }

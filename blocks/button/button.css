@@ -1,9 +1,0 @@
-.button {
-  margin-left: auto;
-}
-
-@media (max-width: 767px) {
-  .button {
-    margin: 0;
-  }
-}

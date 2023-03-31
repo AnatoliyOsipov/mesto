@@ -1,20 +1,15 @@
 .popup__container {
   position: relative;
-  margin-top: 195px;
   display: flex;
   flex-direction: column;
   width: 430px;
-  height: 330px;
   background: #ffffff;
   border-radius: 10px;
+  align-self: center;
 }
 
 @media (max-width: 479px) {
   .popup__container {
     width: 282px;
-    height: 322px;
-    background: #ffffff;
-    border-radius: 10px;
-    margin-top: 123px;
   }
 }

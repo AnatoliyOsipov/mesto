@@ -1,4 +1,7 @@
 .header {
   display: flex;
-  flex-direction: column;
+  border-bottom: 1px solid #545454;
+  max-width: 880px;
+  min-width: 320px;
+  margin: 0 auto;
 }

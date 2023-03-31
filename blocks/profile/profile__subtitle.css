@@ -1,20 +1,19 @@
-.profile__info-subtitle {
+.profile__subtitle {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   margin-top: 16px;
   color: #ffffff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 336px;
 }
 
-@media (max-width: 1023px) {
-  .profile__info-subtitle {
+@media (max-width: 727px) {
+  .profile__subtitle {
     font-size: 14px;
     line-height: 17px;
-  }
-}
-
-@media (max-width: 1023px) {
-  .profile__info-subtitle {
     margin-top: 14px;
   }
 }
