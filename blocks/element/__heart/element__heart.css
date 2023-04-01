@@ -6,6 +6,7 @@
   border: none;
   background: transparent;
   align-self: center;
+  cursor: pointer;
 }
 
 .element__heart:hover {

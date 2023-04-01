@@ -8,9 +8,9 @@ const userNameElement = document.querySelector(".profile__title");
 const userDescriptionElement = document.querySelector(".profile__subtitle");
 
 //Присваивание констант инпуту
-const userNameInput = popupElement.querySelector(".popup__input_name");
+const userNameInput = popupElement.querySelector(".popup__input_field_name");
 const userDescriptionInput = popupElement.querySelector(
-  ".popup__input_description"
+  ".popup__input_field_description"
 );
 
 //Функции открытия и закрытия попапа
