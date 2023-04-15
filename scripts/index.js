@@ -133,11 +133,17 @@ photoButtons.forEach((btn) => {
     const modal = document.querySelector(".gallery-popup");
     const src = event.target.src;
     const name = event.target.alt;
-    const img = document.createElement("img");
+
+    let img = modal.querySelector(".gallery-popup__image");
+
+    if (!img) {
+      img = document.createElement("img");
+      modal.querySelector(".gallery-popup__container").prepend(img);
+    }
+
     img.classList.add("gallery-popup__image");
     img.src = src;
     img.alt = name;
-    modal.querySelector(".gallery-popup__container").prepend(img);
     modal.querySelector(".gallery-popup__title").innerHTML = name;
     modal.classList.add("gallery-popup_open");
   });
@@ -147,6 +153,4 @@ const galleryCloseButton = document.querySelector(".gallery-popup__close");
 galleryCloseButton.addEventListener("click", (event) => {
   const galleryPopup = document.querySelector(".gallery-popup");
   galleryPopup.classList.remove("gallery-popup_open");
-  galleryPopup.querySelector(".gallery-popup__image").remove();
-  galleryPopup.querySelector(".gallery-popup__title").innerHTML = "";
 });
