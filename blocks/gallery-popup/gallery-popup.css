@@ -1,5 +1,5 @@
-.popup {
-  display: flex;;
+.gallery-popup {
+  display: none;
   justify-content: center;
   background: rgba(0, 0, 0, 0.5);
   height: 100%;
@@ -9,7 +9,6 @@
   left: 0;
   margin: 0;
   padding: 0;
-  transition: all 0.5s ease;
-  visibility: hidden;
-  opacity: 0;
+  justify-content: center;
+  align-items: center;
 }

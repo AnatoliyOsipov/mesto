@@ -1,0 +1,16 @@
+.popup__place {
+  margin-top: 34px;
+  margin-left: 36px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@media (max-width: 479px) {
+  .popup__place {
+    margin-top: 25px;
+    margin-left: 22px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
