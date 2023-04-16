@@ -91,63 +91,78 @@ const initialCards = [
 const cardTemplate = document.getElementById("card-template").content;
 const cardContainer = document.querySelector(".elements");
 
-function addCart(name, link) {
+function createCard(name, link) {
   const card = cardTemplate.cloneNode(true);
   const photo = card.querySelector(".element__photo");
   photo.src = link;
   photo.alt = name;
   card.querySelector(".element__title-text").textContent = name;
-  cardContainer.append(card);
+  return card;
 }
 
 initialCards.forEach((el) => {
-  addCart(el.name, el.link);
+  const card = createCard(el.name, el.link);
+  cardContainer.append(card);
 });
 
-const addForm = document.getElementById("add-form");
-addForm.addEventListener("submit", (event) => {
+function create(event) {
   event.preventDefault();
   const placeInput = document.querySelector('#add-form input[name="place"]');
   const linkInput = document.querySelector('#add-form input[name="link"]');
-  addCart(placeInput.value, linkInput.value);
+  const card = createCard(placeInput.value, linkInput.value);
+  cardContainer.prepend(card);
+  initEvents();
   closePopup();
-});
+}
 
-const likeButtons = document.querySelectorAll(".element__heart");
-likeButtons.forEach((btn) => {
-  btn.addEventListener("click", (event) => {
-    event.target.classList.toggle("element__heart_active");
+const addForm = document.getElementById("add-form");
+addForm.addEventListener("submit", create);
+
+function like(event) {
+  event.target.classList.toggle("element__heart_active");
+}
+
+function remove(event) {
+  event.target.parentElement.remove();
+}
+
+function showImage(event) {
+  const modal = document.querySelector(".gallery-popup");
+  const src = event.target.src;
+  const name = event.target.alt;
+
+  let img = modal.querySelector(".gallery-popup__image");
+
+  if (!img) {
+    img = document.createElement("img");
+    modal.querySelector(".gallery-popup__container").prepend(img);
+  }
+
+  img.classList.add("gallery-popup__image");
+  img.src = src;
+  img.alt = name;
+  modal.querySelector(".gallery-popup__title").innerHTML = name;
+  modal.classList.add("gallery-popup_open");
+}
+
+function initEvents() {
+  const likeButtons = document.querySelectorAll(".element__heart");
+  likeButtons.forEach((btn) => {
+    btn.addEventListener("click", like);
   });
-});
 
-const trashButtons = document.querySelectorAll(".element__trash");
-trashButtons.forEach((btn) => {
-  btn.addEventListener("click", (event) => {
-    event.target.parentElement.remove();
+  const trashButtons = document.querySelectorAll(".element__trash");
+  trashButtons.forEach((btn) => {
+    btn.addEventListener("click", remove);
   });
-});
 
-const photoButtons = document.querySelectorAll(".element__photo");
-photoButtons.forEach((btn) => {
-  btn.addEventListener("click", (event) => {
-    const modal = document.querySelector(".gallery-popup");
-    const src = event.target.src;
-    const name = event.target.alt;
-
-    let img = modal.querySelector(".gallery-popup__image");
-
-    if (!img) {
-      img = document.createElement("img");
-      modal.querySelector(".gallery-popup__container").prepend(img);
-    }
-
-    img.classList.add("gallery-popup__image");
-    img.src = src;
-    img.alt = name;
-    modal.querySelector(".gallery-popup__title").innerHTML = name;
-    modal.classList.add("gallery-popup_open");
+  const photoButtons = document.querySelectorAll(".element__photo");
+  photoButtons.forEach((btn) => {
+    btn.addEventListener("click", showImage);
   });
-});
+}
+
+initEvents();
 
 const galleryCloseButton = document.querySelector(".gallery-popup__close");
 galleryCloseButton.addEventListener("click", (event) => {
